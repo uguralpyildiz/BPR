@@ -1,0 +1,80 @@
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Blue Palms Records</title>
+  <style>
+  body {
+  background: #000;
+}
+
+#comingtext {
+  color: lightblue;
+  /*color: #8002f5;*/
+  font-family: Monaco, monospace;
+  font-size: 24px;
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  top: 45%;
+  left: 0;
+  animation: 120ms infinite normal shake;
+}
+
+span {
+  animation: 1.5s infinite normal point;
+}
+
+::-moz-selection {
+  background: #7021d2;
+  color: #fff;
+}
+
+::selection {
+  background: #7021d2;
+  color: #fff;
+}
+
+@keyframes shake {
+  0% {
+    opacity: 0;
+    left: 0;
+  }
+  40%,
+  80% {
+    opacity: 1;
+    left: -2px;
+  }
+}
+
+@keyframes point {
+  0% {
+    opacity: 0;
+    left: 0;
+  }
+  40% {
+    opacity: 0;
+    left: -2px;
+  }
+  80% {
+    opacity: 1;
+    left: -2px;
+  }
+}
+
+  </style>
+</head>
+
+<body>
+
+  <body oncontextmenu="return false" onselectstart="return false" ondragstart="return false">
+    <div id="comingtext">█ █ █ <span style="color:black">█ █ █ █ █ █ █ █ █ █ </span>30%
+      <br>&gt; 
+      Blue Palms Records
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      &nbsp;&nbsp;&nbsp;<br>&gt; 
+      Coming Soon  <span id="point">█</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    </div>
+  </body>
+
+</html>
